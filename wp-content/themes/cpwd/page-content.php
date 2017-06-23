@@ -25,13 +25,30 @@ $slugData = get_category_by_slug( $PROFILE_SLUG );
 
 echo "<h2>{$slugData->name}</h2>";
 
+
+function urlEntry( $profileData ){
+
+	$value = $profileData['value'];
+	$label = $profileData['label'];
+
+	$value = ( $value != null ) ? "<li>$label <a href='$value'>$value</a></li>": false;
+
+	return $value;
+}
+
 foreach ($profiles as $profile):
+
+	$profileId = $profile->ID;
+
+	$linkeidProfile = urlEntry( get_field_object( 'linkedin', $profileId ) );
+	$twitterProfile = urlEntry( get_field_object( 'twitter', $profileId ) );
+
 echo <<<PROF
 	
 PROF;
 
-if ( has_post_thumbnail( $profile->ID ) ) {
-	$src = wp_get_attachment_image_src( get_post_thumbnail_id($profile->ID), array( 160,160 ), false, '' );
+if ( has_post_thumbnail( $profileId ) ) {
+	$src = wp_get_attachment_image_src( get_post_thumbnail_id( $profileId ), array( 160,160 ), false, '' );
 	$cls = 'profile-pic';
 	$profileH3 ="h3 style='background-image:url($src[0])'";
 }else{
@@ -42,6 +59,10 @@ echo <<<PROF
 	<section class="$cls">
 			<$profileH3>{$profile->post_title}</h3>
 			<p>{$profile->post_content}</p>
+			<ul>
+				$linkeidProfile
+				$twitterProfile
+			</ul>
 	</section>
 PROF;
 
