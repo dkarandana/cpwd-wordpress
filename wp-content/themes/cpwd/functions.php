@@ -8,4 +8,11 @@
 
 
 	add_theme_support( 'post-thumbnails' );
+
+	// Get the page number
+	function get_page_number() {
+	    if ( get_query_var('paged') ) {
+	        print ' | ' . __( 'Page ' , 'hbd-theme') . get_query_var('paged');
+	    }
+	} // end get_page_number
 ?>
