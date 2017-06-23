@@ -1,0 +1,98 @@
+msgid ""
+msgstr "MIME-Version: 1.0\n"
+
+#. Name.
+msgid "OH Add Script to Individual Pages Header Footer"
+msgstr ""
+
+#. Short description.
+msgid "Simple plugin to add script to header and footer for individual pages &amp; posts"
+msgstr ""
+
+#. Screenshot description.
+msgid "edit page meta box"
+msgstr ""
+
+#. Found in description list item.
+msgid "<p>we added support to limit the script only for certain post type \\ page</p>"
+msgstr ""
+
+#. Found in description paragraph.
+msgid ""
+"Create a simple way to add javascript code to individual page post or custom post type header and footer,\n"
+"for example: add conversion code to thank you pages\n"
+"add google re-marketing code to individual pages\n"
+"and much more...\n"
+"added in version 1.3 the optin to add script  \\ style to all pages not only individual pages,\n"
+" this will allow you to add Google remarketing code to the entire site or Google Analytics\n"
+" to use it goto \"settings\" - \"Header Footer Settings\""
+msgstr ""
+
+#. Found in description paragraph.
+msgid "New Features (version 1.4):"
+msgstr ""
+
+#. Found in description paragraph.
+msgid ""
+"we support now exclude individual pages form printing the header and footer scripts, this is supported by 2 checkboxes in each page\\post\n"
+"buy check it the script will not be display on this page"
+msgstr ""
+
+#. Found in description paragraph.
+msgid "we added support to limit the script only for certain post type \\ page"
+msgstr ""
+
+#. Found in description paragraph.
+msgid "if you like it \\ use it - please rate us."
+msgstr ""
+
+#. Found in description paragraph.
+msgid ""
+"usage:\n"
+"You need to paste the code with the script tag, for example:\n"
+"   you js code"
+msgstr ""
+
+#. Found in installation list item.
+msgid "Upload the plugin to the '/wp-content/plugins/' directory"
+msgstr ""
+
+#. Found in installation list item.
+msgid "Activate the plugin through the 'Plugins' menu in WordPress"
+msgstr ""
+
+#. Found in installation list item.
+msgid "Navigate to page, post or custom post type"
+msgstr ""
+
+#. Found in installation list item.
+msgid "paste your code to the header or footer box"
+msgstr ""
+
+#. Found in installation list item.
+msgid "save you post or page"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "initial version"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "resolve header script not being echo to the page"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "resolve issue with WordPress Version 3.7"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "added usage description"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "add site wide header footer script (e.g. for Google analytics or remarking code)"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "add 2 new features:"
+msgstr ""
