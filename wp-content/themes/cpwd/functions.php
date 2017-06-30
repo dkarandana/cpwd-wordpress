@@ -15,4 +15,23 @@
 	        print ' | ' . __( 'Page ' , 'hbd-theme') . get_query_var('paged');
 	    }
 	} // end get_page_number
+
+
+	add_action('init', 'customRSS');
+
+	function customRSS(){
+	    add_feed('feedname', 'customRSSFunc');
+	}
+
+	function customRSSFunc(){
+        get_template_part('rss', 'feedname');
+	}
+
+	add_action( 'after_setup_theme', 'wpdocs_theme_setup' );
+
+	function wpdocs_theme_setup() {
+	    add_image_size( 'category-thumb', 300 ); // 300 pixels wide (and unlimited height)
+	    add_image_size( 'homepage-thumb', 220, 180, true ); // (cropped)
+	}
+
 ?>
